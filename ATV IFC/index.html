@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade IFC</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/banner-araquari.png" alt="banner-araquari">
+        <h1>Instituto Federal Catarinense (IFC)</h1>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Sobre o IFC</h2>
+                <p>
+                    O Instituto Federal Catarinense (IFC) foi criado pela Lei Federal nº 11.892, de 29 de dezembro de 2008, e teve origem na integração das escolas <br> agrotécnicas de Concórdia, Rio do Sul e Sombrio e dos colégios agrícolas de Araquari e Camboriú, que eram vinculados à Universidade Federal de Santa <br> Catarina. Hoje, a trajetória formativa do IFC se integra às demandas sociais e aos arranjos produtivas locais/regionais com cursos da educação profissional <br> e tecnológica: qualificação profissional, educação profissional técnica de nível médio, graduação e pós-graduação – lato e stricto sensu. <br>
+                </p>
+                <p>
+                    O IFC possui atualmente 15 campi, distribuídos nas cidades de Abelardo Luz, Araquari, Blumenau, Brusque, Camboriú, Concórdia, Fraiburgo, Ibirama, <br> Luzerna, Rio do Sul, Santa Rosa do Sul, São Bento do Sul, São Francisco do Sul, Sombrio e Videira, e a Reitoria, instalada na cidade de Blumenau. <br>
+                </p>
+                <h3>Missão</h3>
+                <p>
+                    Proporcionar educação profissional, atuando em Ensino, Pesquisa e Extensão, comprometida com a formação cidadã, a inclusão social, a inovação e o <br> desenvolvimento regional.
+                </p>
+                <h3>Visão</h3>
+                <p>
+                    Ser referência nacional em educação profissional, científica e tecnológica, para o mundo do trabalho, por meio da formação cidadã.
+                </p>
+                <p>
+                    <strong>Horários de atendimento do IFC:</strong> 7h30 às 22h
+                </p>
+        </section>
+        <section>
+            <h2>Pesquisa, Pós-Graduação e Inovação</h2>
+                <p>
+                    A coordenação de Pesquisa, Pós-Graduação e Inovação do Instituto Federal Catarinense (IFC)– Campus Videira tem como objetivos:
+                </p>
+                <ul>
+                    <li>Fomentar Projetos de Pesquisa;</li>
+                    <li>Incentivar a Iniciação Científica (Ensino Médio/Técnico e Superior);
+                        <ol>
+                            <li>Apoiar eventos de carácter científico</li>
+                            <li>Incentivar a apresentação de trabalhos científicos;</li>
+                        </ol>
+                    </li>
+                    <li>Apoiar e estimular a criação de novos cursos de Pós-Graduação Lato sensu e Stricto Sensu;</li>
+                    <li>Contribuir com as ações de Inovação.</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Vídeo Institucional</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dpPv_CwLjos?si=hH5jjGturyCisNeb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2>Links Úteis</h2>
+            <ul>
+                <li><a href="http://www.cnpq.br/" target="_blank" rel="external">CNPq</a></li>
+                <li><a href="http://www.capes.gov.br/" target="_blank" rel="external">CAPES</a>
+                    <ol>
+                        <li><a href="http://periodicos.capes.gov.br/" target="_blank" rel="external">Periódicos</a></li>
+                        <li><a href="http://www.siapenet.gov.br/" target="_blank" rel="external">SIAPnet</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Galeria de Imagens</h2>
+            <ul>
+                <li><a href="images/originals/ifc-minha-historia-1.jpg"> <img src="images/miniatures/ifc-minha-historia-1.jpg" alt="Miniatura1"></a></li>
+                <li><a href="images/originals/ifc-minha-historia-2.jpg"> <img src="images/miniatures/ifc-minha-historia-2.jpg" alt="Miniatura2"></a></li>
+                <li><a href="images/originals/ifc-minha-historia-3.jpg"> <img src="images/miniatures/ifc-minha-historia-3.jpg" alt="Miniatura3"></a></li>
+                <li><a href="images/originals/ifc-minha-historia-4.jpg"> <img src="images/miniatures/ifc-minha-historia-4.jpg" alt="Miniatura4"></a></li>
+                <li><a href="images/originals/ifc-minha-historia-5.jpg"> <img src="images/miniatures/ifc-minha-historia-5.jpg" alt="Miniatura5"></a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Fale Conosco</h2>
+            <form action="/enviar-formulario" method="POST">
+            <div>
+                <label for="nome">Nome (obrigatório):</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+            </div>
+            <div>
+                <label for="email">Email (obrigatório):</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="telefone">Número de Telefone (requerido):</label>
+                <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(XX)XXXXX-XXXX" required>
+            </div>
+            <div>
+                <label for="arquivo">Arquivo</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem (obrigatório):</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva aqui sua mensagem"></textarea>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Deseja se inscrever em nossa newsletter? </legend>
+                    <label>
+                        <input type="radio" name="newsletter" value="sim" required> Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="newsletter" value="não" required> Não
+                    </label>
+                    <p>
+                        <button type="submit">Enviar</button>
+                    </p>
+                </fieldset>
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Instituto Federal de Educação Ciência e Tecnologia Catarinense</p>
+        <p>Endereço: Rodovia BR 280, Caixa Postal 21, Porto Grande. Araquari/SC.</p>
+        <p>CEP: 89245-000 - Araquari - SC - Telefone: (47) 3803-7200 </p>
+        <img src="images/logo-ifc.png" alt="Logo do Instituto Federal Catarinense">
+    </footer>
+</body>
+</html>

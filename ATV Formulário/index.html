@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Projetos</h1>
+    </header>
+    <main>
+        <section>
+            <form action="/enviar-formulario" method="POST">
+                <div>
+                    <p>
+                        <label for="titulo">*Título do projeto:</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Título" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="nome">*Coordenador do projeto:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="dinheiro">*Previsão de orçamento R$:</label>
+                        <input type="number" id="dinheiro" name="dinheiro" placeholder="XX" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="dataInicio">*Data de início:</label>
+                        <input type="date" id="dataInicio" name="dataInicio" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="dataFim">*Data de fim:</label>
+                        <input type="date" id="dataFim" name="dataFim" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="duracao">*Tempo de duração:</label>
+                        <select id="duracao" name="duracao" required>
+                            <option value="3">Trimestral</option>
+                            <option value="6">Semestral</option>
+                            <option value="12">Anual</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <fieldset class="ods">
+                        <legend>Objetivos de Desenvolvimento Sustentável</legend>
+                        <label>
+                            <input type="checkbox" id="ods1" name="ods1" value="1"> Erradicação da Pobreza
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ods2" name="ods2" value="2"> Fome Zero e Agricultura Sustentável
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ods3" name="ods3" value="3"> Saúde e Bem-estar
+                        </label> <br>
+                        <label>
+                            <input type="checkbox" id="ods4" name="ods4" value="4"> Educação de Qualidade
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ods5" name="ods5" value="5"> Igualdade de Gênero
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ods6" name="ods6" value="6"> Água Potável e Saneamento
+                        </label> <br>
+                        <label>
+                            <input type="checkbox" id="ods7" name="ods7" value="7"> Energia Limpa e Acessível
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ods8" name="ods8" value="8"> Trabalho Decente e Crescimento Econômico
+                        </label>
+                        <label>
+                            <input type="checkbox" id="ods9" name="ods9" value="9"> Indústria, Inovação e Infraestrutura
+                        </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset class="impacto">
+                        <legend>Nível de Impacto</legend>
+                        <label>
+                            <input type="radio" id="regional" name="nivelImpacto" value="regional" required> Regional
+                        </label>
+                        <label>
+                            <input type="radio" id="nacional" name="nivelImpacto" value="nacional"> Nacional
+                        </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="notificacoes">
+                        <input type="checkbox" id="notificacoes" name="notificacoes" value="sim">
+                        Desejo receber notificações por email sobre outras chamadas
+                    </label>
+                </div>
+                <div>
+                    <p>
+                        <button type="reset">Limpar Formulário</button>
+                        <button type="submit">Enviar Formulário</button>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+            body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            margin: 75px;
+            background-image:radial-gradient(circle, #e0eddf, #abdda8);
+            color: #1a9311;
+            text-align:center;
+     }
+    h1 {
+            color: #126a0c;
+    }
+    p {
+            line-height: 1.36;
+    }
+input[type="text"], input[type="number"], input[type="date"], select, input[type="radio"], input[type="checkbox"] {
+        padding: 2px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f3f8f3;
+        border-color: #126a0c;
+}
+.ods {
+        margin-left: 260px;
+        margin-right: 260px;
+        padding: 2px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        border-color: #126a0c;
+}
+.impacto {
+        margin-left: 575px;
+        margin-right: 575px;
+        padding: 2px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        border-color: #126a0c;
+}
+button {        
+        padding: 10px 20px;
+        background-color: #126a0c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
