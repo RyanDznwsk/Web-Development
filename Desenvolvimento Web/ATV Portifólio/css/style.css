@@ -1,0 +1,215 @@
+html {
+  font-size: clamp(0.9rem, calc(0.5rem + 1.5vw), 2.5rem);
+  font-family: "Heebo", sans-serif;
+  color: #21243D;
+}
+hr {
+  width: 92%;
+  margin: auto;
+  color: #808080;
+  border: 1px inset;
+}
+h1, h2, h3 {
+  color: #21243D;
+}
+
+/* === Link Ativo === */
+.active {
+  color: #FF6464;
+}
+/* === Header === */
+header nav ul li {
+  text-align: center;
+  font-size: 1.15rem;
+}
+header nav ul li a {
+  padding: 2.5vw 2.5vw;
+  display: block;
+}
+header nav ul li a:hover {
+  background-color: #dfd8d8;
+}
+header nav ul li a:hover {
+  background-color: #dfd8d8;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 40vw 0 22vw 0;
+}
+footer img {
+  width: 18vw;
+  padding: 3vw;
+}
+footer p {
+  font-size: 1.3rem;
+  padding: 5vw 0 3vw 0;
+}
+
+/* === Banner === */
+section.banner {
+  padding: 10vw 2vw 10vw 2vw;
+  text-align: center;
+}
+section.banner img {
+  width: 50%;
+}
+section.banner h1 {
+  font-size: 1.95rem;
+  font-weight: bold;
+}
+section.banner p {
+  margin: 5vw 0;
+}
+section.banner a {
+  background-color: #FF6464;
+  color: #ffffff;
+  font-size: 4.5vw;
+  padding: 2.25vw;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+}
+section.banner a:hover {
+  background-color: #ee5252;
+}
+
+/* === Recent Posts === */
+section.rc-post {
+  background-color: #EDF7FA;
+  padding: 0 0 3vw 0;
+}
+section.rc-post h2 {
+  text-align: center;
+  font-size: 1.185rem;
+  padding: 4vw;
+}
+section.rc-post ul {
+  margin: 0 3vw;
+}
+section.rc-post ul li {
+  margin: 0 0 5vw 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 4vw;
+}
+section.rc-post h3 {
+  font-size: 1.385rem;
+  font-weight: 600;
+}
+section.rc-post p {
+  margin: 3vw 0 0 0;
+}
+
+/* === Featured Works === */
+section.ft-works h2 {
+  text-align: center;
+  font-size: 1.185rem;
+  padding: 4vw 4vw 0;
+}
+section.ft-works ul {
+  margin: 0 3vw;
+}
+section.ft-works ul li {
+  padding: 4vw;
+}
+section.ft-works h3 {
+  font-size: 1.385rem;
+  font-weight: 600;
+}
+section.ft-works ul li img {
+  width: 100%;
+}
+section.ft-works p {
+  margin: 3vw 0 0 0;
+}
+
+/* === Dashboard & Illustration === */
+span.year {
+  display: inline-block;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 16px;
+  color: #ffffff;
+  background-color: #142850;
+}
+span.dash {
+  margin-left: 5vw;
+  font-weight: 200;
+  color: #8695A4;
+}
+span.illus {
+  margin-left: 5vw;
+  font-weight: 200;
+  color: #8695A4;
+}
+
+/* === Social Icons === */
+nav.social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+nav.social ul li {
+  display: inline-block;
+}
+nav.social ul li a {
+  display: inline-block;
+  transition: 0.15s;
+}
+nav.social ul li a:hover {
+  transform: scale(1.1);
+}
+
+/* === Segunda Página === */
+
+/* === Featured Works === */
+section.featured-wk {
+  padding: 4vw 2vw 10vw 2vw;
+}
+section.featured-wk h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 0 5vw;
+}
+div.design {
+  padding: 0 3vw 4vw;
+}
+div.design h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+div.design p {
+  margin: 3vw 0 0 0;
+}
+span.year2 {
+  display: inline-block;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 16px;
+  color: #ffffff;
+  background-color: #FF6464;
+}
+span.dash-ue {
+  margin-left: 5vw;
+}
+div.design img {
+  width: 100%;
+  margin: 4vw 0 0 0;
+}
+div.headings {
+  padding: 0 3vw 4vw;
+}
+div.headings h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+div.headings p {
+  margin: 3vw 0 5vw 0;
+}
+div.design img {
+  width: 100%;
+}
