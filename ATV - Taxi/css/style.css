@@ -1,0 +1,311 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+font-family: "Urbanist", sans-serif; /* Sugiro usar esta 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+}
+body {
+    color: #082e46;
+    font-family: "Urbanist", sans-serif;
+}
+
+/* === header === */
+header {
+    text-align: center;
+    padding: 1rem 0;
+}
+header h1 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: 10%;
+    transition: 150ms ease-in-out;
+}
+header h1 a:hover {
+    transform: scale(1.05);
+}
+header h1 a img {
+    width: 100%;
+}
+header ul {
+    margin-bottom: 1rem;
+}
+header nav ul li {
+    font-size: 1.1rem;
+    margin-bottom: 4vw;
+    transition: 100ms ease-in-out;
+}
+header nav ul li:hover {
+    color: #FBBC05;
+    transform: scale(1.05);
+}
+header div p:nth-of-type(1) {
+    margin-bottom: 0.5rem;
+    color: #FBBC05;
+    transition: 100ms ease-in-out;
+}
+header div p:nth-of-type(1):hover {
+    transform: scale(1.1);
+}
+header div p:nth-of-type(2) {
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background-color: #FBBC05;
+    border-radius: 0.25rem;
+    transition: 100ms ease-in-out;
+}
+header div p:nth-of-type(2):hover {
+    transform: scale(1.1);
+}
+
+/* === Footer === */
+footer {
+    padding: 12vw 16vw;
+    background-color: #031835cc;
+}
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 12vw 16vw;
+    background-color: #031835cc;
+}
+footer div.footer-content {
+    padding-top: 12vw;
+    border-top: 1px #c0c0c033 solid;
+}
+footer div.footer-content p {
+    font-size: 0.9rem;
+    margin-bottom: 2vw;
+}
+footer div.footer-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+footer div.footer-content ul li {
+    transition: 100ms ease-in-out;
+}
+footer div.footer-content ul li:hover {
+    transform: scale(1.25);
+}
+
+/* === Banner === */
+section.banner {
+    text-align: center;
+    padding: 8vw 12vw;
+}
+section.banner h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 6vw;
+}
+section.banner h1 span.blue-text {
+    color: #5EB9F0;
+}
+section.banner p:nth-of-type(1) {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 6vw;
+}
+section.banner p:nth-of-type(2) {
+    margin-bottom: 12vw;
+}
+section.banner p:nth-of-type(2) a {
+    color: #ffffff;
+    display: inline-block;
+    background-color: #5EB9F0;
+    padding: 3vw 6vw;
+    border-radius: 100px;
+    transition: 100ms ease-in-out;
+}
+section.banner p:nth-of-type(2) a:hover {
+    transform: scale(0.95);
+}
+
+/* === What We Do === */
+section.about {
+    text-align: center;
+    padding: 6vw 10vw 12vw;
+    background-color: #F0F8FE;
+}
+section.about h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #5EB9F0;
+    margin-bottom: 2vw;
+}
+section.about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8vw;
+}
+section.about ul li {
+    padding: 2vw 4vw;
+    margin-bottom: 8vw;
+}
+section.about ul li img {
+    margin-bottom: 4vw;
+    transition: 200ms ease-in-out;
+}
+section.about ul li:hover img {
+    transform: scale(1.1);
+}
+section.about ul li h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2vw;
+}
+section.about ul li p:nth-of-type(1) {
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-bottom: 2vw;
+}
+section.about ul li p:nth-of-type(2) a {
+    color: #5EB9F0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 1vw;
+    transition: 150ms ease-in-out;
+}
+section.about ul li p:nth-of-type(2) a:hover {
+    gap: 2vw;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+    header {
+        text-align: left;
+        padding: 2vw 16vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 a {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    header h1 a img {
+        width: 100%;
+    }
+    header nav ul {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+    }
+    header nav ul li:not(:nth-last-of-type(1)) {
+        font-size: 0.35rem;
+        margin-bottom: 0;
+    }
+    header nav ul li:nth-last-of-type(1) a {
+        font-size: 0.45rem;
+        padding: 0.75vw 2vw;
+    }
+    footer {
+        padding: 12vw 16vw;
+        background-color: #031835cc;
+    }
+    footer {
+        padding: 4vw 16vw;
+    }
+    footer div.footer-content {
+        padding-top: 4vw;
+    }
+    footer div.footer-content p {
+        font-size: 0.45rem;
+        margin-bottom: 0.5vw;
+    }
+    footer div.footer-content ul {
+        gap: 1.5vw;
+    }
+    section.banner {
+        text-align: left;
+        padding: 6vw 12vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2vw;
+    }
+    section.banner h1 {
+        font-size: 1.3rem;
+        margin-bottom: 2vw;
+    }
+    section.banner h1 span {
+        white-space: pre-line;
+    }
+    section.banner p:nth-of-type(1) {
+        font-size: 0.55rem;
+        margin-bottom: 2vw;
+    }
+    section.banner p:nth-of-type(1) span {
+        white-space: pre-line;
+    }
+    section.banner p:nth-of-type(2) {
+        margin-bottom: 0;
+    }
+    section.banner p:nth-of-type(2) a {
+        font-size: 0.575rem;
+        padding: 1.25vw 2.5vw;
+    }
+    section.about {
+        padding: 4vw 18vw 8vw;
+    }
+    section.about h3 {
+        font-size: 0.6rem;
+        margin-bottom: 1vw;
+    }
+    section.about h2 {
+        font-size: 1rem;
+        margin-bottom: 3vw;
+    }
+    section.about h2 span {
+        white-space: pre-line;
+    }
+    section.about ul {
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        gap: 6vw;
+    }
+    section.about ul li {
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section.about ul li img {
+        margin-bottom: 2vw;
+    }
+    section.about ul li h4 {
+        font-size: 0.675rem;
+        margin-bottom: 1vw;
+    }
+    section.about ul li p:nth-of-type(1) {
+        font-size: 0.4rem;
+        margin-bottom: 0.75vw;
+    }
+    section.about ul li p:nth-of-type(2) a {
+        font-size: 0.45rem;
+        gap: 0.25vw;
+    }
+    section.about ul li p:nth-of-type(2) a:hover {
+        gap: 0.75vw;
+    }
+}
