@@ -1,0 +1,65 @@
+LayoutZen
+Rosa - D08AA5
+Rosa Claro - F0D8E1
+Rosa Botão - E668B3
+
+Roxo - A07CC5
+Laranja - F78B77
+Rosa Link - E668B3
+
+
+Cabeçalho
+
+ZenLayout
+
+Blog
+Blocks
+Documentation
+
+Seção principal
+
+We bring solutions to
+make life easier
+
+We are a creative company that focuses on long term relationships with customers.
+
+Read More
+
+Cards de serviços
+
+Content Marketing
+
+Nulla vitae elit libero, a pharetra augue. Donec id elit
+non mi porta gravida at eget metus cras justo.
+
+Learn More→
+
+Social Engagement
+
+Nulla vitae elit libero, a pharetra augue. Donec id elit
+non mi porta gravida at eget metus cras justo.
+
+Learn More→
+
+Identity & Branding
+
+Nulla vitae elit libero, a pharetra augue. Donec id elit
+non mi porta gravida at eget metus cras justo.
+
+Learn More→
+
+Seção "Why Choose Sandbox?"
+
+WHY CHOOSE SANDBOX?
+
+Here are a few reasons why our customers choose Zen.
+
+Collect Ideas
+
+Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna.
+
+Learn More
+
+Rodapé
+
+© 2026 Zen. All rights reserved.

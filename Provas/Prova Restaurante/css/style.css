@@ -1,0 +1,672 @@
+/* === IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+/*
+Follow - font-family: "Fredoka", sans-serif;
+Medu - Oswald
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+    font-family: "Epilogue", sans-serif;
+}
+h1{
+    font-family: "Nunito", sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+}
+body {
+    color: #000000;
+}
+
+/* === Header === */
+header {
+    text-align: center;
+    padding: 4vw 0;
+}
+header h1 a {
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 8vw;
+}
+header h1 a img {
+    width: 70%;
+}
+header nav ul {
+    margin-bottom: 8vw;
+}
+header nav ul li {
+    font-size: 0.95rem;
+    font-family: "Oswald", sans-serif;
+    transition: 100ms ease-in-out;
+}
+header nav ul li:not(:nth-last-of-type(1)) {
+    margin-bottom: 4vw;
+}
+header nav ul li:hover {
+    color: #FFD40D;
+    transform: scale(1.05);
+}
+header p a {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    display: inline-block;
+    padding: 2vw 8vw;
+    background-color: #FFC222;
+    border-radius: 2.5vw;
+    transition: 150ms ease-in-out;
+}
+header p a:hover {
+    transform: scale(1.1);
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    padding: 10vw 12vw;
+    background-color: #F5F8FD;
+}
+footer div.footer-content div.advice {
+    padding: 6vw;
+    background-color: #ED274B;
+    border-radius: 3vw;
+    margin-bottom: 8vw;
+}
+footer div.footer-content div.advice img {
+    margin-bottom: 6vw;
+}
+footer div.footer-content div.advice p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+footer div.footer-content div.advice p:nth-of-type(1) {
+    margin-bottom: 3vw;
+}
+footer div.footer-content div.advice p:nth-of-type(2) {
+    margin-bottom: 14vw;
+}
+footer div.footer-content div.summary h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 4vw;
+}
+footer div.footer-content div.summary h3 span {
+    border-bottom: 5px #FFD40D solid;
+}
+footer div.footer-content div.summary ul {
+    margin-bottom: 8vw;
+}
+footer div.footer-content div.summary ul li {
+    color: #000000b7;
+    font-size: 0.95rem;
+    cursor: default;
+}
+footer div.footer-content div.summary ul li:not(:nth-last-of-type(1)) {
+    margin-bottom: 2vw;
+}
+footer div.footer-content div.summary ul li:hover {
+    color: #000000;
+}
+footer div.credits {
+    padding-top: 2vw;
+    border-top: 10px #FFD40D solid;
+}
+footer div.credits p {
+    font-size: 0.625rem;
+    font-weight: 900;
+}
+footer div.credits p span {
+    color: #F3274C;
+}
+
+/* === Banner === */
+section.banner {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    padding: 8vw 12vw 0;
+    background-color: #d225251e;
+}
+section.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 6vw;
+}
+section.banner p {
+    font-size: 0.9rem;
+    margin-bottom: 6vw;
+}
+section.banner p a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 2vw 6vw;
+    background-color: #ED274B;
+    border-radius: 100px;
+    margin-bottom: 8vw;
+    transition: 150ms ease-in-out;
+}
+section.banner p a:hover {
+    transform: scale(0.95);
+}
+
+/* === About === */
+section.about {
+    padding: 8vw 10vw 16vw;
+    text-align: center;
+}
+section.about h3 {
+    font-weight: 900;
+    color: #F3274C;
+    margin-bottom: 2vw;
+    font-family: "Nunito", sans-serif;
+}
+section.about h2 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 2vw;
+    font-family: "Nunito", sans-serif;
+}
+section.about div.about-content img {
+    margin-bottom: 4vw;
+}
+section.about div.about-content div.about-text > p {
+    color: #00000083;
+    font-size: 0.9rem;
+    margin-bottom: 6vw;
+}
+section.about div.about-content div.about-text ul li {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    text-align: left;
+    margin-bottom: 2vw;
+    transition: 150ms ease-in-out;
+}
+section.about div.about-content div.about-text ul li:hover {
+    gap: 6vw;
+}
+section.about div.about-content div.about-text ul li div h5 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+}
+section.about div.about-content div.about-text ul li div p {
+    color: #000000d7;
+    font-size: 0.95rem;
+    font-family: "Nunito", sans-serif;
+}
+
+/* === Produtos Populares === */
+section.pop {
+    text-align: center;
+    padding: 12vw 10vw;
+    background-color: #F5F8FD;
+}
+section.pop h3 {
+    font-weight: 700;
+    color: #00A149;
+    margin-bottom: 2vw;
+    font-family: "Oswald", sans-serif;
+}
+section.pop h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 6vw;
+    font-family: "Oswald", sans-serif;
+}
+section.pop ul li {
+    padding: 4vw 3vw 8vw;
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 2vw;
+    margin-inline: auto;
+    margin-bottom: 6vw;
+    transition: 150ms ease-in-out;
+}
+section.pop ul li:hover {
+    transform: translateY(-10px);
+}
+section.pop ul li h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2vw;
+    font-family: "Oswald", sans-serif;
+}
+section.pop ul li h4 span {
+    border-bottom: 3px #FFD40D solid;
+}
+section.pop ul li p {
+    color: #FFD40D;
+    font-size: 0.875rem;
+    line-height: 1;
+    font-family: "Oswald", sans-serif;
+}
+
+/* === Follow BravisThemes === */
+section.follow {
+    text-align: center;
+    padding: 12vw 10vw;
+}
+section.follow a {
+    display: inline-block;
+    margin-bottom: 8vw;
+    transition: 150ms ease-in-out;
+}
+section.follow a:hover {
+    transform: scale(1.05);
+}
+section.follow h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2vw;
+    font-family: "Nunito", sans-serif;
+}
+section.follow p {
+    color: #000000d7;
+    font-size: 0.95rem;
+    margin-bottom: 8vw;
+    font-family: "Nunito", sans-serif;
+}
+section.follow ul li {
+    margin-bottom: 6vw;
+    transition: 150ms ease-in-out;
+}
+section.follow ul li:hover {
+    transform: scale(1.1);
+}
+section.follow ul li img {
+    border-radius: 2vw;
+}
+
+/* === Weekly Special === */
+section.special {
+    text-align: center;
+    padding: 12vw 10vw;
+    background-color: #F5F8FD;
+}
+section.special h3 {
+    font-weight: 900;
+    color: #F3274C;
+    margin-bottom: 2vw;
+    font-family: "Nunito", sans-serif;
+}
+section.special h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 6vw;
+    font-family: "Nunito", sans-serif;
+}
+section.special ul {
+    text-align: left;
+    padding: 4vw;
+    background-color: #ED274B;
+    border-radius: 3vw;
+}
+section.special ul li {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 4vw 0 4vw 6vw;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: 150ms ease-in-out;
+}
+section.special ul li:not(:nth-last-of-type(1)) {
+    margin-bottom: 0.5vw;
+}
+section.special ul li:hover {
+    background-color: #FFC222;
+}
+section.special ul li div.bolinha {
+    padding: 0.7vw;
+    border: 7px #0000004b solid;
+    border-radius: 50%;
+    transition: 150ms ease-in-out;
+}
+section.special ul li:hover div.bolinha {
+    border: 7px #ED274B solid;
+}
+section.special ul li p {
+    font-size: 0.875rem;
+    font-weight: 900;
+    font-family: "Nunito", sans-serif;
+}
+
+/* === Food Services === */
+section.services {
+    text-align: center;
+    padding: 12vw 10vw;
+}
+section.services div.services-text h3 {
+    font-weight: 900;
+    color: #F3274C;
+    margin-bottom: 2vw;
+    font-family: "Nunito", sans-serif;
+}
+section.services div.services-text h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 6vw;
+    font-family: "Nunito", sans-serif;
+}
+section.services div.services-text ul {
+    margin-bottom: 12vw;
+}
+section.services div.services-text ul li:not(:nth-last-of-type(1)) {
+    margin-bottom: 8vw;
+}
+section.services div.services-text ul li img {
+    margin-bottom: 2vw;
+}
+section.services div.services-text ul li h4 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin-bottom: 2vw;
+    font-family: "Nunito", sans-serif;
+}
+section.services div.services-text ul li p {
+    color: #000000d7;
+    font-size: 0.875rem;
+    font-family: "Nunito", sans-serif;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+    header {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw 16vw;
+    }
+    header h1 a {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    header h1 a img {
+        width: 100%;
+    }
+    header nav ul {
+        display: flex;
+        gap: 2vw;
+        margin-bottom: 0;
+    }
+    header nav ul li {
+        font-size: 0.55rem;
+    }
+    header nav ul li:not(:nth-last-of-type(1)) {
+        margin-bottom: 0;
+    }
+    header p a {
+        font-size: 0.65rem;
+        padding: 1vw 3vw;
+        border-radius: 1vw;
+    }
+    header p a:hover {
+        transform: scale(1.05);
+    }
+    footer {
+        text-align: left;
+        padding: 8vw 14vw;
+    }
+    footer div.footer-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6vw;
+    }
+    footer div.footer-content div.advice {
+        padding: 3vw;
+        background-color: #ED274B;
+        border-radius: 2vw;
+        margin-bottom: 0;
+    }
+    footer div.footer-content div.advice img {
+        transform: translate(-1.5vw, -1.5vw);
+        width: 40%;
+        margin-bottom: 0;
+    }
+    footer div.footer-content div.advice p {
+        font-size: 0.35rem;
+    }
+    footer div.footer-content div.advice p:nth-of-type(1) {
+        margin-bottom: 1vw;
+    }
+    footer div.footer-content div.advice p:nth-of-type(2) {
+        margin-bottom: 5vw;
+    }
+    footer div.footer-content div.summary {
+        display: flex;
+        gap: 6vw;
+    }
+    footer div.footer-content div.summary h3 {
+        font-size: 0.55rem;
+        margin-bottom: 3vw;
+    }
+    footer div.footer-content div.summary h3 span {
+        border-bottom: 4px #FFD40D solid;
+    }
+    footer div.footer-content div.summary ul {
+        margin-bottom: 0;
+    }
+    footer div.footer-content div.summary ul li {
+        font-size: 0.4rem;
+    }
+    footer div.footer-content div.summary ul li:not(:nth-last-of-type(1)) {
+        margin-bottom: 1vw;
+    }
+    footer div.credits {
+        padding-top: 1.5vw;
+        border-top: 8px #FFD40D solid;
+    }
+    footer div.credits p {
+        margin-left: 2vw;
+        font-size: 0.35rem;
+    }
+    section.banner {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        padding: 12vw 12vw 0 16vw;
+        background-color: #d225251e;
+    }
+    section.banner div:nth-of-type(1) {
+        max-width: 28vw;
+    }
+    section.banner h1 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-bottom: 2vw;
+    }
+    section.banner h1 span {
+        white-space: pre-line;
+    }
+    section.banner p {
+        font-size: 0.35rem;
+        margin-bottom: 2vw;
+    }
+    section.banner p a {
+        font-size: 0.55rem;
+        padding: 0.75vw 1.75vw;
+        border-radius: 100px;
+        margin-bottom: 0;
+    }
+    section.about {
+        text-align: center;
+        padding: 8vw 16vw 14vw;
+    }
+    section.about h3 {
+        font-size: 0.475rem;
+        margin-bottom: 1vw;
+    }
+    section.about h2 {
+        font-size: 1.15rem;
+        margin-bottom: 2vw;
+    }
+    section.about div.about-content {
+        display: flex;
+        gap: 4vw;
+        align-items: center;
+    }
+    section.about div.about-content img {
+        margin-bottom: 0;
+        max-width: 38vw;
+    }
+    section.about div.about-content div.about-text > p {
+        text-align: left;
+        font-size: 0.4rem;
+        margin-bottom: 2vw;
+    }
+    section.about div.about-content div.about-text ul li {
+        display: flex;
+        align-items: center;
+        gap: 1.5vw;
+        text-align: left;
+        margin-bottom: 2vw;
+    }
+    section.about div.about-content div.about-text ul li:hover {
+        gap: 2vw;
+    }
+    section.about div.about-content div.about-text ul li div h5 {
+        font-size: 0.5rem;
+    }
+    section.about div.about-content div.about-text ul li div p {
+        font-size: 0.4rem;
+    }
+    section.pop {
+        padding: 8vw 12vw;
+    }
+    section.pop h3 {
+        text-align: left;
+        font-size: 0.4rem;
+        margin-bottom: 1vw;
+    }
+    section.pop h2 {
+        text-align: left;
+        font-size: 1.3rem;
+        margin-bottom: 4vw;
+    }
+    section.pop ul {
+        display: flex;
+        gap: 2vw;
+    }
+    section.pop ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1vw 3vw 2vw;
+        border-radius: 0.75vw;
+        margin: 0;
+    }
+    section.pop ul li div {
+        transform: translateY(-20px);
+    }
+    section.pop ul li h4 {
+        font-size: 0.5rem;
+        margin-bottom: 1vw;
+    }
+    section.pop ul li p {
+        font-size: 0.35rem;
+    }
+    section.follow {
+        padding: 8vw 12vw;
+    }
+    section.follow a {
+        margin-bottom: 1vw;
+    }
+    section.follow h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5vw;
+    }
+    section.follow p {
+        font-size: 0.5rem;
+        margin-bottom: 3vw;
+    }
+    section.follow ul {
+        display: flex;
+        gap: 2vw;
+    }
+    section.follow ul li {
+        margin-bottom: 0;
+    }
+    section.follow ul li img {
+        border-radius: 1.5vw;
+    }
+    section.special {
+        text-align: left;
+        padding: 8vw 12vw;
+    }
+    section.special h3 {
+        font-size: 0.55rem;
+        margin-bottom: 1vw;
+    }
+    section.special h2 {
+        font-size: 1.3rem;
+        margin-bottom: 4vw;
+    }
+    section.special ul {
+        padding: 2.5vw;
+        border-radius: 2vw;
+    }
+    section.special ul li {
+        gap: 1vw;
+        padding: 1.5vw 0 1.5vw 2.5vw;
+    }
+    section.special ul li:not(:nth-last-of-type(1)) {
+        margin-bottom: 0.3vw;
+    }
+    section.special ul li div.bolinha {
+        padding: 0.25vw;
+        border: 0.55vw #0000004b solid;
+    }
+    section.special ul li:hover div.bolinha {
+        border: 0.55vw #ED274B solid;
+    }
+    section.special ul li p {
+        font-size: 0.5rem;
+    }
+    section.services {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 8vw;
+        padding: 8vw 12vw;
+    }
+    section.services div.services-text h3 {
+        font-size: 0.5rem;
+        margin-bottom: 1vw;
+    }
+    section.services div.services-text h2 {
+        font-size: 1.2rem;
+        margin-bottom: 2vw;
+    }
+    section.services div.services-text ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5vw;
+        margin-bottom: 0;
+    }
+    section.services div.services-text ul li {
+        margin-bottom: 0;
+    }
+    section.services div.services-text ul li:not(:nth-last-of-type(1)) {
+        margin-bottom: 0;
+    }
+    section.services div.services-text ul li img {
+        width: 48%;
+        margin-bottom: 1.5vw;
+    }
+    section.services div.services-text ul li h4 {
+        font-size: 0.55rem;
+        margin-bottom: 1vw;
+    }
+    section.services div.services-text ul li p {
+        font-size: 0.35rem;
+    }
+}

@@ -1,0 +1,332 @@
+html {
+  font-size: clamp(1rem, calc(0.5rem + 1vw), 1.625rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+/* === Header === */
+header {
+  padding: 6vw 0;
+}
+header h1 {
+  margin-bottom: 4vw;
+  transition: ease-out 150ms;
+}
+header h1:hover {
+  transform: scale(1.05);
+}
+header h1 a {
+  display: inline-block;
+  width: 15%;
+}
+header h1 a img {
+  width: 100%;
+}
+header nav ul li {
+  color: #1F1534;
+  font-size: 1.125rem;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-top: 2vw;
+  transition: ease-out 150ms;
+}
+header nav ul li:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+header nav ul li.active {
+  opacity: 1;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* === Footer === */
+footer {
+  color: #ffffffb3;
+  padding: 12vw 16vw;
+  background-color: #458FF6;
+}
+footer div.credits {
+  margin-bottom: 8vw;
+}
+footer div.credits p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+footer div.credits p:nth-of-type(1) {
+  margin-bottom: 4vw;
+}
+footer div.mapa h4 {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+footer div.mapa ul li {
+  font-weight: 300;
+}
+footer div.mapa ul li:not(:nth-last-of-type(1)) {
+  margin-bottom: 2vw;
+}
+
+/* === Banner === */
+section.banner {
+  padding: 6vw 8vw;
+}
+section.banner img {
+  margin-bottom: 4vw;
+}
+section.banner div.banner-text h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 6vw;
+}
+section.banner div.banner-text h1 span.blue-text {
+  color: #458FF6;
+}
+section.banner div.banner-text p:nth-of-type(1) {
+  color: #7D7987;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 8vw;
+}
+section.banner div.banner-text p a {
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 2.5vw 8vw;
+  background-color: #458FF6;
+  border-radius: 100px;
+  font-size: 1.25rem;
+  transition: ease-out 150ms;
+}
+section.banner div.banner-text p a:hover {
+  transform: scale(0.95);
+}
+
+/* === Cuidados com a Saúde === */
+section.cuidados {
+  padding: 8vw 12vw;
+}
+section.cuidados h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 5vw;
+}
+section.cuidados h2 span {
+  border-bottom: 2px #000000 solid;
+  padding-bottom: 1.5vw;
+}
+section.cuidados p {
+  color: #7D7987;
+  font-weight: 300;
+}
+section.cuidados > p:nth-of-type(1) {
+  font-size: 1.125rem;
+  margin-bottom: 12vw;
+}
+section.cuidados ul  {
+  margin-bottom: 8vw;
+}
+section.cuidados ul li {
+  padding: 4vw;
+  border: 1px #0000004d solid;
+  border-radius: 20px;
+  width: 65%;
+  margin-inline: auto;
+  margin-bottom: 4vw;
+}
+section.cuidados ul li img {
+  width: 25%;
+  margin-bottom: 6vw;
+}
+section.cuidados ul li h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 2vw;
+}
+section.cuidados p a {
+  color: #458FF6;
+  display: inline-block;
+  padding: 2.5vw 8vw;
+  border-radius: 100px;
+  border: 1px #458FF6 solid;
+  font-size: 1.2rem;
+  transition: ease-out 150ms;
+}
+section.cuidados p a:hover {
+  transform: scale(1.05);
+}
+
+/* === Depoimentos === */
+section.depoimentos {
+  padding: 8vw 12vw 16vw;
+  color: #FFFFFF;
+}
+section.depoimentos div.depoimentos-content {
+  padding: 6vw;
+  background-color: #458FF6;
+  border-radius: 24px;
+}
+section.depoimentos div.depoimentos-content h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8vw;
+}
+section.depoimentos div.depoimentos-content h2 span {
+  border-bottom: 2px #FFFFFF solid;
+  padding-bottom: 2vw;
+}
+section.depoimentos div.depoimentos-content div.depoimento img {
+  border: 6px #FFFFFF solid;
+  border-radius: 50%;
+  margin-bottom: 6vw;
+}
+section.depoimentos div.depoimentos-content div.depoimento p {
+  color: #ffffffb3;
+  font-size: 1.25rem;
+}
+
+/* === Media Query === */
+@media only screen and (min-width: 600px) {
+  body {
+    text-align: left;
+  }
+  header {
+    padding: 2vw 16vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin-bottom: 0;
+  }
+  header h1 a {
+    width: 100%;
+  }
+  header nav ul {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+  }
+  header nav ul li {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+  footer {
+    padding: 10vw 16vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer div.credits {
+    margin-bottom: 0;
+  }
+  footer div.credits p {
+    font-size: 0.75rem;
+  }
+  footer div.credits p:nth-of-type(1) {
+    margin-bottom: 4vw;
+  }
+  footer div.credits p:nth-of-type(1) span {
+    white-space: pre-line;
+  }
+  footer div.mapa h4 {
+    font-size: 1rem;
+    margin-bottom: 1.5vw;
+  }
+  footer div.mapa ul li:not(:nth-last-of-type(1)) {
+    margin-bottom: 0.75vw;
+  }
+  section.banner {
+    padding: 6vw 12vw;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  }
+  section.banner img {
+    max-width: 36vw;
+    margin-bottom: 0;
+  }
+  section.banner div.banner-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5vw;
+  }
+  section.banner div.banner-text h1 span {
+    white-space: pre-line;
+  }
+  section.banner div.banner-text p:nth-of-type(1) {
+    font-size: 0.95rem;
+    margin-bottom: 3vw;
+  }
+  section.banner div.banner-text p a {
+    padding: 1vw 4vw;
+    font-size: 1rem;
+  }
+  section.cuidados {
+    text-align: center;
+    padding: 6vw 16vw;
+  }
+  section.cuidados h2 {
+    font-size: 1.75rem;
+    margin-bottom: 4vw;
+  }
+  section.cuidados > p:nth-of-type(1) {
+    font-size: 0.9rem;
+    margin-bottom: 6vw;
+  }
+  section.cuidados ul  {
+    text-align: left;
+    display: flex;
+    gap: 3vw;
+    margin-bottom: 4vw;
+  }
+  section.cuidados ul li {
+    padding: 2vw;
+    width: 100%;
+    margin: 0;
+  }
+  section.cuidados ul li img {
+    width: 20%;
+    margin-bottom: 3vw;
+  }
+  section.cuidados ul li h3 {
+    font-size: 1rem;
+    margin-bottom: 1vw;
+  }
+  section.cuidados ul li p {
+    font-size: 0.75rem;
+  }
+  section.cuidados p a {
+    padding: 1vw 4vw;
+    font-size: 1rem;
+  }
+  section.depoimentos {
+    padding: 6vw 14vw 16vw;
+  }
+  section.depoimentos div.depoimentos-content {
+    padding: 4vw 17vw;
+  }
+  section.depoimentos div.depoimentos-content h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 4vw;
+  }
+  section.depoimentos div.depoimentos-content h2 span {
+    padding-bottom: 1.5vw;
+  }
+  section.depoimentos div.depoimentos-content div.depoimento {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+  }
+  section.depoimentos div.depoimentos-content div.depoimento img {
+    margin-bottom: 0;
+  }
+  section.depoimentos div.depoimentos-content div.depoimento p {
+    font-size: 0.75rem;
+  }
+}

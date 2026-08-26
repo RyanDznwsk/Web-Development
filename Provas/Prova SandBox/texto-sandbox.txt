@@ -1,0 +1,60 @@
+SandBox
+Azul - 5EB9F0
+Azul Claro - F0F8FE
+
+
+Cabeçalho
+
+Sandbox
+
+Projects
+Blog
+Blocks
+Documentation
+Contact
+
+Seção principal
+
+A digital agency
+specializing on
+mobile design
+
+We are an award winning design agency that
+strongly believes in the power of creative ideas.
+
+Get Started
+
+Seção de serviços
+
+WHAT WE DO?
+
+The service we offer is specifically
+designed to meet your needs.
+
+Web Design
+
+Nulla vitae elit libero, a pharetra augue.
+Donec id elit non mi porta gravida at eget.
+Fusce dapibus tellus.
+
+Learn More→
+
+Graphic Design
+
+Maecenas faucibus mollis interdum.
+Vivamus sagittis lacus vel augue laoreet.
+Sed posuere consectetur.
+
+Learn More→
+
+3D Animation
+
+Cras justo odio, dapibus ac facilisis in,
+egestas eget quam. Praesent commodo
+cursus magna scelerisque.
+
+Learn More→
+
+Rodapé
+
+© 2026 Sandbox. All rights reserved.

@@ -1,0 +1,144 @@
+CORES
+Amarelo Botão - #FFC222
+Fundo Banner - #D22526 (Pode deixar mais claro)
+Fundo Botão - #ED274B
+Fundo Azul - #F5F8FD (Pode deixar mais escuro)
+Letra verde - #00A149
+Letra vermelha e fundo rodapé - #F3274C
+Borda Amarela - #FFD40D
+
+
+
+Cabeçalho
+TasteNest
+Home
+About Us
+Shop
+Blog
+Pages
+Contact
+Contact Us
+
+
+Banner
+
+Enjoy Our Delicious Meal
+
+Good designs for food delivery business are the key to attractive the more customers and earn money and specially food.
+
+EXPLORE NOW
+
+50% OFF
+
+Seção Produtos Populares
+
+Crispy, Every Bite Taste
+
+Popular Food Items
+
+Chiken
+
+3 Products
+
+Pro Burger
+
+3 Products
+
+Pro Pasta
+
+3 Products
+
+Pro Pizza
+
+3 Products
+
+
+Follow BravisThemes
+Join our community to inspire your desires
+
+© 2025 TasteNest | All shownete3 Themes
+
+/* NIVEIS 2 E 3*/
+
+Seção semana especial
+Weekly Special
+Best
+Seller
+Deals
+
+ Fish Vegetables
+ Buffet Vegas
+ Fish Fry Grilled
+ Tasty Snacks
+ Smoked Chicke
+
+
+
+
+Seção Serviços
+
+FOOD SERVICESA
+
+We Provide Best Services
+
+Afternoon Tea
+
+Nisl quam vestibulum ac quam nec eu nulla. Orci varius nisl quam nisi.
+
+Wine & Cocktails
+
+Nisl quam vestibulum ac quam nec eu nulla. Orci varius nisl quam nisi.
+
+Takeaway & Delivery
+
+Nisl quam vestibulum ac quam nec eu nulla. Orci varius nisl quam nisi.
+
+Alfresco Dining
+
+Nisl quam vestibulum ac quam nec eu nulla. Orci varius nisl quam nisi.
+
+
+Seção Sobre o Restaurante
+
+ABOUT THE FOOD RESTAURANT
+
+Perfect Place For An Exceptional Experience
+
+Nisl quam vestibulum ac quam nec eu nulla a nulla. Donec varius volutpat purus eu cursus nec molestie. In arcu quam nec odio a dolor sit amet.
+
+Online Food Ordering
+
+Easy Food Delivery from the best restaurants.
+
+100% Healthy Food
+
+Eating a wide variety of nutritious healthy foods.
+
+
+
+
+
+
+Rodapé
+
+TasteNest
+
+Tuesday - Saturday: 12:00pm – 23:00pm
+
+Closed on Sunday
+
+5 star rated on TripAdvisor
+
+About
+Fradoke One
+Special Dish
+Reservation
+Contact
+Menu
+Steaks
+Burgers
+Cocktails
+Bar B Q
+Desserts
+Copyright 
+
