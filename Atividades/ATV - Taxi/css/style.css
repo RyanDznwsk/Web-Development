@@ -16,12 +16,13 @@ html{
     font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
 }
 body {
-    color: #000000;
+    color: #07070A;
     font-family: "Urbanist", sans-serif;
 }
 
 /* === header === */
 header {
+    color: #0F172A;
     text-align: center;
     padding: 1rem 0;
 }
@@ -33,7 +34,6 @@ header h1 a {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    width: 10%;
     transition: 150ms ease-in-out;
 }
 header h1 a:hover {
@@ -117,7 +117,6 @@ section.banner {
 section.banner div.hero-image {
     position: absolute;
     inset: 0;
-    background-color: #E1F4FF;
     z-index: -1;
 }
 section.banner div.hero-image img {
@@ -162,172 +161,85 @@ section.banner > img {
 }
 
 /* === Ready to Ride? === */
-section.about {
+section.ready {
+    color: #252B42;
     text-align: center;
-    padding: 6vw 10vw 12vw;
-    background-color: #F0F8FE;
+    padding: 14vw 10vw;
 }
-section.about h3 {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #5EB9F0;
-    margin-bottom: 2vw;
-}
-section.about h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 8vw;
-}
-section.about ul li {
-    padding: 2vw 4vw;
-    margin-bottom: 8vw;
-}
-section.about ul li img {
-    margin-bottom: 4vw;
-    transition: 200ms ease-in-out;
-}
-section.about ul li:hover img {
-    transform: scale(1.1);
-}
-section.about ul li h4 {
-    font-size: 1.5rem;
+section.ready h2 {
+    font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 2vw;
 }
-section.about ul li p:nth-of-type(1) {
-    font-size: 0.875rem;
-    font-weight: 300;
-    margin-bottom: 2vw;
+section.ready > p {
+    margin-bottom: 8vw;
 }
-section.about ul li p:nth-of-type(2) a {
-    color: #5EB9F0;
+section.ready div.ride > img {
+    margin-bottom: 8vw;
+}
+section.ready div.ride ul li:not(:nth-last-of-type(1)) {
+    margin-bottom: 6vw;
+}
+section.ready div.ride ul li div {
     display: inline-flex;
-    justify-content: center;
-    gap: 1vw;
+    padding: 4vw;
+    border-radius: 8px;
+    background-color: #E1F4FF;
+    margin-bottom: 5vw;
+}
+section.ready div.ride ul li h3 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 6vw;
+}
+section.ready div.ride ul li p {
+    color: #737373;
+    font-size: 0.75rem;
+}
+
+/* === Download === */
+section.download {
+    color: #ffffff;
+    text-align: center;
+    padding: 14vw 10vw;
+}
+section.download div {
+    padding: 8vw;
+    background-color: #FBBC05;
+    border-radius: 24px;
+    position: relative;
+}
+section.download div h2 {
+    font-size: 1.625rem;
+    font-weight: 700;
+    margin-bottom: 4vw;
+}
+section.download div p {
+    font-size: 0.75rem;
+    margin-bottom: 6vw;
+}
+section.download div a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: inline-block;
+    background-color: #252B42;
+    padding: 4vw 10vw;
+    border-radius: 5px;
     transition: 150ms ease-in-out;
 }
-section.about ul li p:nth-of-type(2) a:hover {
-    gap: 2vw;
+section.download div a:hover {
+    transform: scale(1.05);
+}
+section.download div img:nth-of-type(1) {
+    margin-left: 14vw;
+    transform: translateX(-50%) rotate(90deg);
+}
+section.download div img:nth-of-type(2) {
+    margin-right: 14vw;
+    transform: translateX(50%) rotate(90deg);
 }
 
 /* MEDIA QUERY - DESKTOP */
 @media  screen and (min-width: 600px) {
-    header {
-        text-align: left;
-        padding: 2vw 16vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header h1 a {
-        width: 100%;
-        margin-bottom: 0;
-    }
-    header h1 a img {
-        width: 100%;
-    }
-    header nav ul {
-        display: flex;
-        align-items: center;
-        gap: 3vw;
-    }
-    header nav ul li:not(:nth-last-of-type(1)) {
-        font-size: 0.35rem;
-        margin-bottom: 0;
-    }
-    header nav ul li:nth-last-of-type(1) a {
-        font-size: 0.45rem;
-        padding: 0.75vw 2vw;
-    }
-    footer {
-        padding: 12vw 16vw;
-        background-color: #031835cc;
-    }
-    footer {
-        padding: 4vw 16vw;
-    }
-    footer div.footer-content {
-        padding-top: 4vw;
-    }
-    footer div.footer-content p {
-        font-size: 0.45rem;
-        margin-bottom: 0.5vw;
-    }
-    footer div.footer-content ul {
-        gap: 1.5vw;
-    }
-    section.banner {
-        text-align: left;
-        padding: 6vw 12vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2vw;
-    }
-    section.banner h1 {
-        font-size: 1.3rem;
-        margin-bottom: 2vw;
-    }
-    section.banner h1 span {
-        white-space: pre-line;
-    }
-    section.banner p:nth-of-type(1) {
-        font-size: 0.55rem;
-        margin-bottom: 2vw;
-    }
-    section.banner p:nth-of-type(1) span {
-        white-space: pre-line;
-    }
-    section.banner p:nth-of-type(2) {
-        margin-bottom: 0;
-    }
-    section.banner p:nth-of-type(2) a {
-        font-size: 0.575rem;
-        padding: 1.25vw 2.5vw;
-    }
-    section.about {
-        padding: 4vw 18vw 8vw;
-    }
-    section.about h3 {
-        font-size: 0.6rem;
-        margin-bottom: 1vw;
-    }
-    section.about h2 {
-        font-size: 1rem;
-        margin-bottom: 3vw;
-    }
-    section.about h2 span {
-        white-space: pre-line;
-    }
-    section.about ul {
-        padding: 0;
-        margin-bottom: 0;
-        display: flex;
-        gap: 6vw;
-    }
-    section.about ul li {
-        padding: 0;
-        margin-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    section.about ul li img {
-        margin-bottom: 2vw;
-    }
-    section.about ul li h4 {
-        font-size: 0.675rem;
-        margin-bottom: 1vw;
-    }
-    section.about ul li p:nth-of-type(1) {
-        font-size: 0.4rem;
-        margin-bottom: 0.75vw;
-    }
-    section.about ul li p:nth-of-type(2) a {
-        font-size: 0.45rem;
-        gap: 0.25vw;
-    }
-    section.about ul li p:nth-of-type(2) a:hover {
-        gap: 0.75vw;
-    }
 }

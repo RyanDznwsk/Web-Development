@@ -1,14 +1,14 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_6001_97)">
-<mask id="mask0_6001_97" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+<g clip-path="url(#clip0_4309_144)">
+<mask id="mask0_4309_144" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
 <path d="M64 0H0V64H64V0Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_6001_97)">
+<g mask="url(#mask0_4309_144)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M64 8.39258e-07V19.2V64H44.8V41.6106C44.7942 53.977 34.7677 64 22.4 64C10.0288 64 0 53.9712 0 41.6C0 29.2288 10.0288 19.2 22.4 19.2C34.7677 19.2 44.7942 29.2231 44.8 41.5894V19.2H22.4H0V8.39258e-07L44.8 0L64 8.39258e-07Z" fill="#07070A"/>
 </g>
 </g>
 <defs>
-<clipPath id="clip0_6001_97">
+<clipPath id="clip0_4309_144">
 <rect width="64" height="64" fill="white"/>
 </clipPath>
 </defs>
