@@ -55,24 +55,22 @@ header nav ul li:hover {
     color: #FBBC05;
     transform: scale(1.05);
 }
-header div p:nth-of-type(1) {
+header div.links a:nth-of-type(1) {
+    display: block;
     margin-bottom: 0.5rem;
     color: #FBBC05;
     transition: 100ms ease-in-out;
 }
-header div p:nth-of-type(1):hover {
+header div.links a:hover {
     transform: scale(1.1);
 }
-header div p:nth-of-type(2) {
+header div.links a:nth-of-type(2) {
     color: #ffffff;
     display: inline-block;
     padding: 0.35rem 0.75rem;
     background-color: #FBBC05;
     border-radius: 0.25rem;
     transition: 100ms ease-in-out;
-}
-header div p:nth-of-type(2):hover {
-    transform: scale(1.1);
 }
 
 /* === Footer === */
@@ -238,6 +236,104 @@ section.download div img:nth-of-type(1) {
 section.download div img:nth-of-type(2) {
     margin-right: 14vw;
     transform: translateX(50%) rotate(90deg);
+}
+
+/* === Services === */
+section.services {
+    text-align: center;
+    padding: 14vw 12vw;
+}
+section.services div.services-text h2 {
+    font-size: 1.35em;
+    font-weight: 700;
+    margin-bottom: 4vw;
+}
+section.services div.services-text p {
+    color: #39393B;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 6vw;
+}
+section.services ul.cards li {
+    padding: 6vw;
+    background-color: #F6F6F6;
+}
+section.services ul.cards li:nth-of-type(1) {
+    background-color: #FAD007;
+}
+section.services ul.cards li:not(:nth-last-of-type(1)) {
+    margin-bottom: 6vw;
+}
+section.services ul.cards li img {
+    margin-bottom: 8vw;
+}
+section.services ul.cards li h3 {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-bottom: 4vw;
+}
+section.services ul.cards li p {
+    color: #39393B;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 4vw;
+}
+
+/*=== Contact Us === */
+section.contact {
+    text-align: center;
+    padding: 16vw 8vw;
+}
+section.contact div.contact-text h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 4vw;
+}
+section.contact div.contact-text p {
+    color: #39393B;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 8vw;
+}
+section.contact div.contact-content form input[type="text"], input[type="email"], input[type="tel"] {
+    font-weight: 500;
+    outline: none;
+    padding: 4vw;
+    border-bottom: 2px #FAD007 solid;
+    margin-bottom: 4vw;
+    transition: 150ms ease-in-out;
+}
+section.contact div.contact-content form input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    background-color: #f1f1f1;
+    border: 2px #FAD007 solid;
+}
+section.contact div.contact-content form input::placeholder {
+    color: #07070A;
+}
+section.contact div.contact-content form textarea {
+    font-weight: 500;
+    outline: none;
+    resize: none;
+    height: 20vh;
+    padding: 4vw;
+    border-bottom: 2px #FAD007 solid;
+    margin-bottom: 4vw;
+    transition: 150ms ease-in-out;
+}
+section.contact div.contact-content form textarea:focus {
+    background-color: #f1f1f1;
+    border: 2px #FAD007 solid;
+}
+section.contact div.contact-content form button {
+    padding: 5vw 9vw;
+    background-color: #FAD007;
+    margin-bottom: 12vw;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+section.contact div.contact-content form button:hover {
+    background-color: #f2cb07;
+    transform: scale(1.05);
 }
 
 /* MEDIA QUERY - DESKTOP */
