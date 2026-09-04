@@ -192,6 +192,7 @@ section.ready h2 {
     margin-bottom: 2vw;
 }
 section.ready > p {
+    color: #737373;
     margin-bottom: 8vw;
 }
 section.ready div.ride > img {
@@ -223,22 +224,22 @@ section.download {
     text-align: center;
     padding: 14vw 10vw;
 }
-section.download div {
+section.download div.download-content {
     padding: 8vw;
     background-color: #FBBC05;
     border-radius: 24px;
     position: relative;
 }
-section.download div h2 {
+section.download div.download-content div.download-text h2 {
     font-size: 1.625rem;
     font-weight: 700;
     margin-bottom: 4vw;
 }
-section.download div p {
+section.download div.download-content div.download-text p {
     font-size: 0.75rem;
     margin-bottom: 6vw;
 }
-section.download div a {
+section.download div.download-content div.download-text a {
     color: #ffffff;
     font-size: 0.9rem;
     font-weight: 300;
@@ -248,14 +249,14 @@ section.download div a {
     border-radius: 5px;
     transition: 150ms ease-in-out;
 }
-section.download div a:hover {
+section.download div.download-content div.download-text a:hover {
     transform: scale(1.05);
 }
-section.download div img:nth-of-type(1) {
+section.download div.download-content div.download-images img:nth-of-type(1) {
     margin-left: 14vw;
     transform: translateX(-50%) rotate(90deg);
 }
-section.download div img:nth-of-type(2) {
+section.download div.download-content div.download-images img:nth-of-type(2) {
     margin-right: 14vw;
     transform: translateX(50%) rotate(90deg);
 }
@@ -485,86 +486,92 @@ section.contact div.contact-content form button:hover {
         margin-top: 0;
         width: auto;
     }
-
-/* === Ready to Ride? === */
-section.ready {
-    color: #252B42;
-    text-align: center;
-    padding: 14vw 10vw;
-}
-section.ready h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 2vw;
-}
-section.ready > p {
-    margin-bottom: 8vw;
-}
-section.ready div.ride > img {
-    margin-bottom: 8vw;
-}
-section.ready div.ride ul li:not(:nth-last-of-type(1)) {
-    margin-bottom: 6vw;
-}
-section.ready div.ride ul li div {
-    display: inline-flex;
-    padding: 4vw;
-    border-radius: 8px;
-    background-color: #E1F4FF;
-    margin-bottom: 5vw;
-}
-section.ready div.ride ul li h3 {
-    font-size: 0.875rem;
-    font-weight: 700;
-    margin-bottom: 6vw;
-}
-section.ready div.ride ul li p {
-    color: #737373;
-    font-size: 0.75rem;
-}
-
-/* === Download === */
-section.download {
-    color: #ffffff;
-    text-align: center;
-    padding: 14vw 10vw;
-}
-section.download div {
-    padding: 8vw;
-    background-color: #FBBC05;
-    border-radius: 24px;
-    position: relative;
-}
-section.download div h2 {
-    font-size: 1.625rem;
-    font-weight: 700;
-    margin-bottom: 4vw;
-}
-section.download div p {
-    font-size: 0.75rem;
-    margin-bottom: 6vw;
-}
-section.download div a {
-    color: #ffffff;
-    font-size: 0.9rem;
-    font-weight: 300;
-    display: inline-block;
-    background-color: #252B42;
-    padding: 4vw 10vw;
-    border-radius: 5px;
-    transition: 150ms ease-in-out;
-}
-section.download div a:hover {
-    transform: scale(1.05);
-}
-section.download div img:nth-of-type(1) {
-    margin-left: 14vw;
-    transform: translateX(-50%) rotate(90deg);
-}
-section.download div img:nth-of-type(2) {
-    margin-right: 14vw;
-    transform: translateX(50%) rotate(90deg);
-}
+    section.ready {
+        text-align: center;
+        padding: 6vw 12vw;
+    }
+    section.ready h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1vw;
+    }
+    section.ready > p {
+        font-size: 0.35rem;
+        bottom: 4vw;
+    }
+    section.ready > p span {
+        white-space: pre-line;
+    }
+    section.ready div.ride {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:12vw;
+    }
+    section.ready div.ride > img {
+        margin-bottom: 0vw;
+    }
+    section.ready div.ride ul {
+        text-align: left;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5vw 4vw;
+    }
+    section.ready div.ride ul li:not(:nth-last-of-type(1)) {
+        margin-bottom: 0;
+    }
+    section.ready div.ride ul li div {
+        padding: 1vw;
+        margin-bottom: 1vw;
+    }
+    section.ready div.ride ul li h3 {
+        font-size: 0.5rem;
+        margin-bottom: 2vw;
+    }
+    section.ready div.ride ul li p {
+        font-size: 0.4rem;
+    }
+    section.ready div.ride ul li p span {
+        white-space: pre-line;
+    }
+    section.download {
+        padding: 6vw 16vw;
+    }
+    section.download div.download-content {
+        text-align: left;
+        padding: 4.5vw 6vw;
+        display: flex;
+        gap: 12vw;
+        align-items: center;
+    }
+    section.download div.download-content div.download-text h2 {
+        font-size: 0.875rem;
+        margin-bottom: 1vw;
+    }
+    section.download div.download-content div.download-text p {
+        font-size: 0.35rem;
+        margin-bottom: 2vw;
+    }
+    section.download div.download-content div.download-text p span {
+        white-space: pre-line;
+    }
+    section.download div.download-content div.download-text a {
+        font-size: 0.4rem;
+        font-weight: 600;
+        padding: 0.75vw 2vw;
+    }
+    section.download div.download-content div.download-images img:nth-of-type(1) {
+        position: absolute;
+        bottom: 0;
+        margin-left: 0;
+        transform: translateX(-100%) rotate(0);
+    }
+    section.download div.download-content div.download-images img:nth-of-type(2) {
+        position: absolute;
+        top: 0;
+        margin-right: 0;
+        transform: translateX(100%) rotate(0);
+        align-self: flex-start;
+    }
 
 /* === Services === */
 section.services {
