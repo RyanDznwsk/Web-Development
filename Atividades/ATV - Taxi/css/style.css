@@ -19,6 +19,17 @@ body {
     color: #07070A;
     font-family: "Urbanist", sans-serif;
 }
+@keyframes color {
+    0% {
+        background-color: #F6F6F6;
+    }
+    50% {
+        background-color: #FAD007;
+    }
+    100% {
+        background-color: #F6F6F6;
+    }
+}
 
 /* === header === */
 header {
@@ -280,9 +291,19 @@ section.services div.services-text p {
 section.services ul.cards li {
     padding: 6vw;
     background-color: #F6F6F6;
+    animation: color 3200ms ease-in-out infinite;
 }
 section.services ul.cards li:nth-of-type(1) {
-    background-color: #FAD007;
+    animation-delay: 0ms;
+}
+section.services ul.cards li:nth-of-type(2) {
+    animation-delay: 800ms;
+}
+section.services ul.cards li:nth-of-type(3) {
+    animation-delay: 2400ms;
+}
+section.services ul.cards li:nth-of-type(4) {
+    animation-delay: 1600ms;
 }
 section.services ul.cards li:not(:nth-last-of-type(1)) {
     margin-bottom: 6vw;
@@ -505,7 +526,7 @@ section.contact div.contact-content form button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap:12vw;
+        gap: 12vw;
     }
     section.ready div.ride > img {
         margin-bottom: 0vw;
@@ -538,9 +559,9 @@ section.contact div.contact-content form button:hover {
     }
     section.download div.download-content {
         text-align: left;
-        padding: 4.5vw 6vw;
+        padding: 0 6vw;
         display: flex;
-        gap: 12vw;
+        justify-content: space-between;
         align-items: center;
     }
     section.download div.download-content div.download-text h2 {
@@ -559,115 +580,114 @@ section.contact div.contact-content form button:hover {
         font-weight: 600;
         padding: 0.75vw 2vw;
     }
+    section.download div.download-content div.download-images {
+        display: flex;
+    }
     section.download div.download-content div.download-images img:nth-of-type(1) {
-        position: absolute;
-        bottom: 0;
-        margin-left: 0;
-        transform: translateX(-100%) rotate(0);
+        margin: 12.5vw 8vw 0 0;
+        transform: translateX(0) rotate(0);
     }
     section.download div.download-content div.download-images img:nth-of-type(2) {
-        position: absolute;
-        top: 0;
+        margin: 0 0 12.5vw 0;
         margin-right: 0;
-        transform: translateX(100%) rotate(0);
-        align-self: flex-start;
+        transform: translateX(0) rotate(0);
     }
-
-/* === Services === */
-section.services {
-    text-align: center;
-    padding: 14vw 12vw;
-}
-section.services div.services-text h2 {
-    font-size: 1.35em;
-    font-weight: 700;
-    margin-bottom: 4vw;
-}
-section.services div.services-text p {
-    color: #39393B;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 6vw;
-}
-section.services ul.cards li {
-    padding: 6vw;
-    background-color: #F6F6F6;
-}
-section.services ul.cards li:nth-of-type(1) {
-    background-color: #FAD007;
-}
-section.services ul.cards li:not(:nth-last-of-type(1)) {
-    margin-bottom: 6vw;
-}
-section.services ul.cards li img {
-    margin-bottom: 8vw;
-}
-section.services ul.cards li h3 {
-    font-size: 1.25em;
-    font-weight: 700;
-    margin-bottom: 4vw;
-}
-section.services ul.cards li p {
-    color: #39393B;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 4vw;
-}
-
-/*=== Contact Us === */
-section.contact {
-    text-align: center;
-    padding: 16vw 8vw;
-}
-section.contact div.contact-text h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 4vw;
-}
-section.contact div.contact-text p {
-    color: #39393B;
-    font-size: 0.875rem;
-    font-weight: 600;
-    margin-bottom: 8vw;
-}
-section.contact div.contact-content form input[type="text"], input[type="email"], input[type="tel"] {
-    font-weight: 500;
-    outline: none;
-    padding: 4vw;
-    border-bottom: 2px #FAD007 solid;
-    margin-bottom: 4vw;
-    transition: 150ms ease-in-out;
-}
-section.contact div.contact-content form input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
-    background-color: #f1f1f1;
-    border: 2px #FAD007 solid;
-}
-section.contact div.contact-content form input::placeholder {
-    color: #07070A;
-}
-section.contact div.contact-content form textarea {
-    font-weight: 500;
-    outline: none;
-    resize: none;
-    height: 20vh;
-    padding: 4vw;
-    border-bottom: 2px #FAD007 solid;
-    margin-bottom: 4vw;
-    transition: 150ms ease-in-out;
-}
-section.contact div.contact-content form textarea:focus {
-    background-color: #f1f1f1;
-    border: 2px #FAD007 solid;
-}
-section.contact div.contact-content form button {
-    padding: 5vw 9vw;
-    background-color: #FAD007;
-    margin-bottom: 12vw;
-    cursor: pointer;
-    transition: 150ms ease-in-out;
-}
-section.contact div.contact-content form button:hover {
-    background-color: #f2cb07;
-    transform: scale(1.05);
-}
+    section.services {
+        text-align: left;
+        padding: 6vw 8vw;
+        display: flex;
+        justify-content: space-around;
+        gap: 6vw;
+    }
+    section.services div.services-text h2 {
+        font-size: 0.8rem;
+        margin-bottom: 1vw;
+    }
+    section.services div.services-text h2 span {
+        white-space: pre-line;
+    }
+    section.services div.services-text p {
+        font-size: 0.35rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    section.services ul.cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 4vw 2vw;
+    }
+    section.services ul.cards li {
+        padding: 2vw;
+        height: auto;
+    }
+    section.services ul.cards li:not(:nth-last-of-type(1)) {
+        margin-bottom: 0;
+    }
+    section.services ul.cards li img {
+        margin-bottom: 2vw;
+        width: 20%;
+    }
+    section.services ul.cards li h3 {
+        font-size: 0.625rem;
+        margin-bottom: 1vw;
+    }
+    section.services ul.cards li p {
+        font-size: 0.3rem;
+        font-weight: 550;
+        margin-bottom: 0;
+    }
+    section.services ul.cards li p span {
+        white-space: pre-line;
+    }
+    section.contact {
+        text-align: center;
+        padding: 6vw 8vw;
+    }
+    section.contact div.contact-text h2 {
+        font-size: 0.9em;
+        margin-bottom: 1vw;
+    }
+    section.contact div.contact-text p {
+        font-size: 0.45rem;
+        margin-bottom: 4vw;
+    }
+    section.contact div.contact-text p span {
+        white-space: pre-line;
+    }
+    section.contact div.contact-content {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw;
+    }
+    section.contact div.contact-content form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+    }
+    section.contact div.contact-content form input[type="text"], input[type="email"], input[type="tel"] {
+        font-size: 0.5rem;
+        padding: 1.5vw;
+        margin-bottom: 0;
+    }
+    section.contact div.contact-content form label {
+        font-size: 0.5rem;
+        grid-column: 1 / span 2;
+    }
+    section.contact div.contact-content form textarea {
+        font-size: 0.5rem;
+        height: 30vh;
+        padding: 1.5vw;
+        margin-bottom: 0;
+        grid-column: 1 / span 2;
+    }
+    section.contact div.contact-content form button {
+        font-size: 0.5rem;
+        padding: 2vw 4vw;
+        margin-bottom: 0;
+    }
+    section.contact div.contact-content iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
